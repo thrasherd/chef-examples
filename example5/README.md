@@ -7,7 +7,7 @@ example5 Cookbook
 * The MySQL instance assigned by chef should be named 'default'
 * The MySQL service should set the root password to 'changeme'
 * The MySQL innodb.cnf should dynamically set the innodb buffer pool
-  to use 1/2 of the system memory.
+  to use 1/4 of the system memory.
 * A MySQL config named innodb.cnf should be added to this server, you
   may use the innodb.cnf file from example4 how ever it will need to
   be modified to satisfy the innodb buffer pool requirement.
