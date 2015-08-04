@@ -12,8 +12,13 @@ package 'ntp' do
   action :install
 end
 
-# Add the template here
+template '/etc/ntp.conf' do
+  source 'ntp.erb'
+  mode '0644'
+end
 
 service 'ntp' do
   action [:enable, :start]
 end
+
+
